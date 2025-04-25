@@ -54,7 +54,7 @@ server <- function(input, output) {
       df <- df %>% filter(sexe %in% input$sexe)
     }
     
-    # Retourne les données filtrées ou un message d'erreur
+   
     if (nrow(df) == 0) {
       showNotification("Aucune donnée ne correspond aux filtres", type = "warning")
     }
